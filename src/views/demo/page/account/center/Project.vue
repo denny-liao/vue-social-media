@@ -2,8 +2,8 @@
   <List :class="prefixCls">
     <a-row :gutter="16">
       <template v-for="item in deepMerge(tm(list), eventUrlList)" :key="item.title">
-        <a-col :span="6">
-          <ListItem>
+        <a-col :span="24" :md="8">
+          <ListItem class="!justify-center">
             <a :href="item.url" target="_blank">
               <Card :hoverable="true" :class="`${prefixCls}__card`">
                 <img :src="getImg(item.imgUrl)" />
@@ -62,7 +62,7 @@
 
       img {
         width: 100%;
-        height: 130px;
+        height: 30%;
       }
 
       &-title {

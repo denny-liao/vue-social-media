@@ -1,13 +1,15 @@
 <template>
   <div :class="prefixCls">
     <a-row :class="`${prefixCls}-top`">
-      <a-col :span="9" :class="`${prefixCls}-col`">
+      <a-col :span="24" :md="9" :class="`${prefixCls}-col`">
         <a-row>
           <a-col :span="8">
             <div :class="`${prefixCls}-top__avatar`">
               <img width="70" :src="avatar" />
               <span>Denny</span>
-              <div>{{ t('motto') }}</div>
+              <div :class="`${prefixCls}-top__motto`" class="whitespace-nowrap">{{
+                t('motto')
+              }}</div>
             </div>
           </a-col>
           <a-col :span="16">
@@ -22,7 +24,7 @@
           </a-col>
         </a-row>
       </a-col>
-      <a-col :span="7" :class="`${prefixCls}-col`">
+      <a-col :span="24" :md="7" :class="`${prefixCls}-col`">
         <CollapseContainer :title="t('tag')" :canExpan="false">
           <template v-for="tag in tm(tags)" :key="tag">
             <Tag class="mb-2">
@@ -31,10 +33,7 @@
           </template>
         </CollapseContainer>
       </a-col>
-      <a-col :span="8" :class="`${prefixCls}-col`">
-        <div class="absolute right-0 top-0 cursor-pointer" @click="handleLocale">
-          <Icon :icon="'material-symbols:translate'" color="#fff" size="25" />
-        </div>
+      <a-col :span="24" :md="8" :class="`${prefixCls}-col`">
         <CollapseContainer :class="`${prefixCls}-top__hobby`" :title="t('hobby')" :canExpan="false">
           <div
             v-for="(hobby, index) in deepMerge(tm(hobbies), hobbiesStyle)"
@@ -47,6 +46,9 @@
         </CollapseContainer>
       </a-col>
     </a-row>
+    <div class="absolute right-6 top-6 cursor-pointer" @click="handleLocale">
+      <Icon :icon="'material-symbols:translate'" color="#fff" size="25" />
+    </div>
     <div :class="`${prefixCls}-bottom`">
       <Tabs>
         <template v-for="item in deepMerge(tm(achieveList), achieveInfoList)" :key="item.key">
@@ -131,10 +133,6 @@
   .account-center {
     &-col:not(:last-child) {
       padding: 0 10px;
-
-      &:not(:last-child) {
-        border-right: 1px dashed rgb(206 206 206 / 50%);
-      }
     }
 
     &-top {
@@ -158,9 +156,13 @@
         }
 
         div {
-          margin-top: 3px;
           font-size: 12px;
         }
+      }
+
+      &__motto {
+        font-size: 12px;
+        margin-top: 20px;
       }
 
       &__detail {

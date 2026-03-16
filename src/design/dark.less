@@ -243,7 +243,9 @@
 }
 
 [data-theme='dark'] .account-center-col:not(:last-child):not(:last-child) {
-  border-right: 1px dashed rgb(206 206 206 / 50%);
+  @media screen and (min-width: 768px) {
+      border-right: 1px dashed rgb(206 206 206 / 50%);
+  }
 }
 
 [data-theme='dark'] .account-center-top {
