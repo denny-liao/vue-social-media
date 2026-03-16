@@ -1,12 +1,11 @@
 <template>
   <List item-layout="vertical" :class="prefixCls">
-    <template v-for="item in list" :key="item.title">
+    <template v-for="item in deepMerge(tm(list), projectUrlList)" :key="item.title">
       <ListItem>
         <ListItemMeta>
           <template #description>
             <div :class="`${prefixCls}__content`">
               {{ item.content }}
-              <a :href="item.docUrl" target="_blank">(查看更多..)</a>
             </div>
           </template>
           <template #title>
@@ -23,29 +22,31 @@
           </template>
         </ListItemMeta>
         <a :href="item.url" target="_blank">
-            <div  :class="`${prefixCls}__link`">
-              <div :class="`${prefixCls}__link-content`">
-                  <div>{{ item.fullTitle }}</div>
-                  <div>{{ item.fullDescription }} </div>
-                  <div>
-                  <img :src="item.imgUrl" width="30px" height="30px">
-                    {{ item.url }}</div>
-              </div>
-              <div :class="`${prefixCls}__link-img`">
-                  <img :src="item.imgUrl">
-              </div>
-
+          <div :class="`${prefixCls}__link`">
+            <div :class="`${prefixCls}__link-content`">
+              <div>{{ item.fullTitle }}</div>
+              <div>{{ item.fullDescription }} </div>
+              <div>
+                <img :src="item.imgUrl" width="30px" height="30px" />
+                {{ item.url }}</div
+              >
             </div>
-          </a>
+            <div :class="`${prefixCls}__link-img`">
+              <img :src="item.imgUrl" />
+            </div>
+          </div>
+        </a>
       </ListItem>
     </template>
   </List>
 </template>
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import { List, Tag } from 'ant-design-vue';
-  import Icon from '@/components/Icon/Icon.vue';
-  import { actions, projectList } from './data';
+  import { defineComponent } from 'vue'
+  import { List, Tag } from 'ant-design-vue'
+  import Icon from '@/components/Icon/Icon.vue'
+  import { actions, projectList, projectUrlList } from './data'
+  import { useI18n } from '/@/hooks/web/useI18n'
+  import { deepMerge } from '/@/utils'
 
   export default defineComponent({
     components: {
@@ -56,18 +57,24 @@
       Icon,
     },
     setup() {
+      // 'tm' can not use namespace
+      const { tm, t } = useI18n()
       return {
         prefixCls: 'account-center-article',
         list: projectList,
         actions,
-      };
+        tm,
+        t,
+        projectUrlList,
+        deepMerge,
+      }
     },
-  });
+  })
 </script>
 <style lang="less" scoped>
   .account-center-article {
-    a  {
-       color: inherit;
+    a {
+      color: inherit;
     }
     &__title {
       margin-bottom: 12px;
@@ -103,7 +110,7 @@
       right: 20px;
       color: rgb(0 0 0 / 45%);
     }
-    
+
     &__link {
       display: flex;
       min-height: 100px;

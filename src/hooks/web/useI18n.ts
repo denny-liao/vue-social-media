@@ -8,6 +8,9 @@ type I18nGlobalTranslation = {
   (key: string, list: unknown[]): string;
   (key: string, named: Record<string, unknown>): string;
 };
+type I18nGlobalObjectTranslation = {
+  (key: string): Record<string, any>;
+};
 
 type I18nTranslationRestParameters = [string, any];
 
@@ -23,6 +26,7 @@ function getKey(namespace: string | undefined, key: string) {
 
 export function useI18n(namespace?: string): {
   t: I18nGlobalTranslation;
+  tm: I18nGlobalObjectTranslation;
 } {
   // if vue-i18n is not installed
   const normalFn = {

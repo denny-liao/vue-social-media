@@ -1,7 +1,7 @@
 <template>
   <List :class="prefixCls">
     <a-row :gutter="16">
-      <template v-for="item in list" :key="item.title">
+      <template v-for="item in deepMerge(tm(list), eventUrlList)" :key="item.title">
         <a-col :span="6">
           <ListItem>
             <a :href="item.url" target="_blank">
@@ -24,7 +24,9 @@
 <script lang="ts">
   import { defineComponent } from 'vue'
   import { List, Card, Row, Col } from 'ant-design-vue'
-  import { smeethEventList } from './data'
+  import { eventList, eventUrlList } from './data'
+  import { useI18n } from '/@/hooks/web/useI18n'
+  import { deepMerge } from '/@/utils'
 
   export default defineComponent({
     components: {
@@ -35,11 +37,16 @@
       [Col.name]: Col,
     },
     setup() {
-      const getImg = (path)  => new URL(import.meta.env.VITE_PUBLIC_PATH + path, import.meta.url).href
+      const getImg = (path) =>
+        new URL(import.meta.env.VITE_PUBLIC_PATH + path, import.meta.url).href
+      const { tm } = useI18n()
       return {
         prefixCls: 'account-center-project',
-        list: smeethEventList,
+        list: eventList,
         getImg,
+        tm,
+        eventUrlList,
+        deepMerge,
       }
     },
   })

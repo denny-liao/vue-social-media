@@ -1,0 +1,111 @@
+{
+  "motto": "Stars can't shine without darkness",
+  "viewMore": "View More",
+  "tag": "Tag",
+  "hobby": "Hobby",
+  "details": [
+    {
+      "title": "Web Technology Enthusiast"
+    },
+    {
+      "title": "Architecture Design"
+    },
+    {
+      "title": "Sanmin District, Kaohsiung, Taiwan"
+    }
+  ],
+  "tags": [
+    "Software Development",
+    "Creative",
+    "Good Listener",
+    "Strong Communication",
+    "Enjoys Networking",
+    "Easygoing",
+    "Team Player",
+    "Proactive",
+    "Loves Challenges"
+  ],
+  "hobbies": [
+    {
+      "title": "English Learning"
+    },
+    {
+      "title": "Drawing"
+    },
+    {
+      "title": "Fitness"
+    },
+    {
+      "title": "Swimming"
+    },
+    {
+      "title": "Anime"
+    },
+    {
+      "title": "Reading"
+    },
+    {
+      "title": "Music"
+    },
+    {
+      "title": "Singing"
+    },
+    {
+      "title": "Thinking"
+    }
+  ],
+  "achieveList": [
+    {
+      "name": "Projects"
+    },
+    {
+      "name": "Landing Pages"
+    }
+  ],
+  "projectList": [
+    {
+      "title": "SmeetH",
+      "description": ["Vue 2", "vue-router", "vuex", "sass"],
+      "content": "A social platform that allows users to upload photos and videos, with features such as search, chat, top-up payments, and post publishing.",
+      "fullTitle": "SmeetH - Private Dating | Chat App | Amateur Video Platform | smeeth.in",
+      "fullDescription": "SmeetH is a large-scale social chatting platform where users can interact with creators through private messages, photos, and videos. Users can unlock exclusive content, browse posts, and enjoy real-time one-on-one conversations."
+    },
+    {
+      "title": "Single Page Portfolio Project",
+      "description": ["Vue 3", "i18n", "TypeScript", "Vite", "Pinia", "Ant Design Vue"],
+      "content": "A frontend project inspired by the vue-vben-admin architecture. Currently deployed on GitHub Pages as a demonstration project.",
+      "fullTitle": "Github | vue-social-world",
+      "fullDescription": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    }
+  ],
+  "eventList": [
+    {
+      "title": "Inception",
+      "content": "This task board is designed for SG (streamer hosts) on the platform, aiming to encourage creators to stay active and engage more with users."
+    },
+    {
+      "title": "Guess Number",
+      "content": "This event is open to all users regardless of identity. The goal is to encourage users to spend diamonds through prediction and reward mechanics."
+    },
+    {
+      "title": "Gift Package",
+      "content": "This event integrates the in-app backpack, coupons, and gift systems by bundling smaller items into discounted packages."
+    },
+    {
+      "title": "Running Hamster",
+      "content": "An interactive event featuring animated hamster interactions. Hosts can create hamsters and participate in activities involving animated gameplay elements."
+    },
+    {
+      "title": "Enthusiasm Moon Festival",
+      "content": "A Mid-Autumn Festival event where users can play a card-flipping game to earn mooncakes and Moon God points, or purchase Jade Rabbits using diamonds."
+    },
+    {
+      "title": "Ghost Appearances",
+      "content": "A Halloween-themed event where users can play games to earn pumpkin lanterns and send them to their favorite creators."
+    },
+    {
+      "title": "Win Heart Now",
+      "content": "Since chatting with creators normally requires spending diamonds, this event introduces alternative interaction methods between users and creators."
+    }
+  ]
+}
