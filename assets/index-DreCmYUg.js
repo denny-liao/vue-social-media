@@ -1,0 +1,1 @@
+import{d as t}from"./vue-CSQcXBz_.js";import{_ as e}from"./index.js";import"./antd-BLGfz0zX.js";const n=t({name:"DefaultLayout",components:{},setup(){return{}}});function o(r,s,p,a,c,f){return null}const i=e(n,[["render",o]]);export{i as default};

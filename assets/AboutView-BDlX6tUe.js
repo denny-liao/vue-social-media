@@ -1,0 +1,1 @@
+import{_ as o}from"./index.js";import{_ as t,a2 as s,a7 as a}from"./vue-CSQcXBz_.js";import"./antd-BLGfz0zX.js";const r={},n={class:"about"};function c(i,e){return t(),s("div",n,[...e[0]||(e[0]=[a("h1",null,"This is an about page",-1)])])}const m=o(r,[["render",c]]);export{m as default};

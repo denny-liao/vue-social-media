@@ -1,1 +1,0 @@
-import{_ as e}from"./index.js";import{_ as o,a2 as t,a7 as s}from"./vue-Bks1hA2_.js";import"./antd-B38FcySN.js";const a={},c={class:"about"},_=s("h1",null,"This is an about page",-1),n=[_];function r(i,d){return o(),t("div",c,n)}const p=e(a,[["render",r]]);export{p as default};
