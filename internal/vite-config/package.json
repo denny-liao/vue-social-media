@@ -4,12 +4,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Denny-Zhang/vue-social-media.git"
+    "url": "git+https://github.com/denny-liao/vue-social-media.git"
   },
   "bugs": {
-    "url": "https://github.com/Denny-Zhang/vue-social-media/issues"
+    "url": "https://github.com/denny-liao/vue-social-media/issues"
   },
-  "homepage": "https://github.com/Denny-Zhang/vue-social-media#readme",
+  "homepage": "https://github.com/denny-liao/vue-social-media#readme",
   "license": "MIT",
   "exports": {
     ".": {

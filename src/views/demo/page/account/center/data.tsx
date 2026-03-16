@@ -95,7 +95,7 @@ export const projectUrlList: any[] = [
     imgUrl: 'https://smeeth.in/smeethicon_144.png',
   },
   {
-    url: 'https://github.com/Denny-Zhang/vue-social-media',
+    url: 'https://github.com/denny-liao/vue-social-media',
     imgUrl: 'https://github.com/fluidicon.png',
   },
 ]

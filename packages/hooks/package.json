@@ -2,12 +2,12 @@
   "name": "@denny/hooks",
   "version": "1.0.0",
   "bugs": {
-    "url": "https://github.com/Denny-Zhang/vue-social-media/issues"
+    "url": "https://github.com/denny-liao/vue-social-media/issues"
   },
-  "homepage": "https://github.com/Denny-Zhang/vue-social-media#readme",
+  "homepage": "https://github.com/denny-liao/vue-social-media#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Denny-Zhang/vue-social-media.git"
+    "url": "git+https://github.com/denny-liao/vue-social-media.git"
   },
   "license": "MIT",
   "sideEffects": false,

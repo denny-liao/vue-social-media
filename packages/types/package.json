@@ -1,13 +1,13 @@
 {
   "name": "@denny/types",
   "version": "1.0.0",
-  "homepage": "https://github.com/Denny-Zhang/vue-social-media",
+  "homepage": "https://github.com/denny-liao/vue-social-media",
   "bugs": {
-    "url": "https://github.com/Denny-Zhang/vue-social-media/issues"
+    "url": "https://github.com/denny-liao/vue-social-media/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Denny-Zhang/vue-social-media.git",
+    "url": "git+https://github.com/denny-liao/vue-social-media.git",
     "directory": "packages/types"
   },
   "license": "MIT",

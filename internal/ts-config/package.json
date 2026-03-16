@@ -2,13 +2,13 @@
   "name": "@denny/ts-config",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/Denny-Zhang/vue-social-media#readme",
+  "homepage": "https://github.com/denny-liao/vue-social-media#readme",
   "bugs": {
-    "url": "https://github.com/Denny-Zhang/vue-social-media/issues"
+    "url": "https://github.com/denny-liao/vue-social-media/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Denny-Zhang/vue-social-media.git"
+    "url": "git+https://github.com/denny-liao/vue-social-media.git"
   },
   "license": "MIT",
   "author": "",
