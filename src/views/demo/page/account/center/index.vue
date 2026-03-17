@@ -131,9 +131,6 @@
 </script>
 <style lang="less" scoped>
   .account-center {
-    &-col:not(:last-child) {
-      padding: 0 10px;
-    }
 
     &-top {
       margin: 16px 16px 12px;

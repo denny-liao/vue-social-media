@@ -139,6 +139,9 @@
         flex: 1 1;
         position: relative;
         overflow: hidden;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
         & img {
           position: absolute;
           top: 50%;
