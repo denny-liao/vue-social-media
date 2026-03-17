@@ -46,8 +46,8 @@
         </CollapseContainer>
       </a-col>
     </a-row>
-    <div class="absolute right-6 top-6 cursor-pointer" @click="handleLocale">
-      <Icon :icon="'material-symbols:translate'" color="#fff" size="25" />
+    <div class="absolute right-5 top-5 cursor-pointer" @click="handleLocale">
+      <Icon :icon="'material-symbols:translate'" color="#fff" size="20" />
     </div>
     <div :class="`${prefixCls}-bottom`">
       <Tabs>
