@@ -50,7 +50,7 @@
       <Icon :icon="'material-symbols:translate'" color="#fff" size="20" />
     </div>
     <div :class="`${prefixCls}-bottom`">
-      <Tabs>
+      <Tabs defaultActiveKey="2">
         <template v-for="item in deepMerge(tm(achieveList), achieveInfoList)" :key="item.key">
           <TabPane :tab="item.name">
             <component :is="item.component" />
@@ -63,7 +63,7 @@
 
 <script lang="ts">
   import { Tag, Tabs, Row, Col } from 'ant-design-vue'
-  import { defineComponent, computed, unref } from 'vue'
+  import { defineComponent, computed, unref, ref } from 'vue'
   import { CollapseContainer } from '/@/components/Container/index'
   import Icon from '@/components/Icon/Icon.vue'
   import Article from './Article.vue'
@@ -110,7 +110,7 @@
       function handleLocale() {
         changeLocale(lang.value)
       }
-
+      const curTab = ref('2')
       return {
         prefixCls: 'account-center',
         avatar,
@@ -125,13 +125,13 @@
         deepMerge,
         detailsStyle,
         achieveInfoList,
+        curTab,
       }
     },
   })
 </script>
 <style lang="less" scoped>
   .account-center {
-
     &-top {
       margin: 16px 16px 12px;
       padding: 10px;

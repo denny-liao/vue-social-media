@@ -45,7 +45,7 @@ export const RootRoute: AppRouteRecordRaw ={
   component: () => import('/@/views/demo/page/account/center/index.vue'),
   meta: {
     // icon: 'ion:grid-outline',
-    title: t('routes.demo.page.accountCenter'),
+    title: t('routes.basic.appName'),
     ignoreAuth: true, //TODO: don't need to Auth ??
   },
 }
